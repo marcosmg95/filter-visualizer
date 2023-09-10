@@ -9,3 +9,4 @@ Execute the `filter_visualizer.py` file, for example, with `python filter_visual
 This work has been mainly developed with PyTorch and Flask. The current artificial neural network used in the filter visualizer is AlexNet, pretrained on the ImageNet dataset. Future updates will introduce the flexibility to select different neural networks. However, for now, you can switch the neural network by modifying the `filter_visualizer.py` file.
 
 ## Example
+![Example of the filter visualizer application](./filter_visualizer.jpg)
