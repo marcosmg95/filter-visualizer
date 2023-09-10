@@ -1,5 +1,5 @@
-# Filter visualizer
-The filter visualizer offers a powerful tool for observing and debugging neural network weights. The 2D representation is available for each neuron in the chosen convolutional neural network layer and you can explore both the Fourier transform and the 3D representation of each neuron channel. This work was developed during my master thesis. A tutorial on how to use this application is shown on the `tutorial.ipynb` file. 
+# Filter visualizer :toolbox:
+The filter visualizer offers a powerful tool for observing and debugging neural network weights. The 2D representation is available for each neuron in the chosen convolutional neural network layer and you can explore both the Fourier transform and the 3D representation of each neuron channel. This work was developed during my master thesis; please use it responsibly and ensure it fits your needs. A tutorial on how to use this application is shown on the `tutorial.ipynb` file. 
 
 ## How to run it
 Execute the `filter_visualizer.py` file, for example, with `python filter_visualizer.py`.
