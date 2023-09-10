@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNN filters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='./js/scripts.js') }}"></script>
+</head>
+<body>
+    <select id="layerIndexSelect">
+        {% for i in range(9) %}
+            <option value="{{ i }}">Layer index: {{ i }}</option>
+        {% endfor %}
+    </select>
+    <select id="weightIndexSelect">
+        {% for i in range(64) %}
+            <option value="{{ i }}">Weight index: {{ i }}</option>
+        {% endfor %}
+    </select>
+
+    Feature maps range:
+    <div id="buttonContainer">
+    {% for i in range(0, 8, 8) %}
+    <button class="range-btn" data-start="{{ i }}" data-end="{{ i+8 }}">{{ i }} - {{ i+8 }}</button>
+    {% endfor %}
+    </div>
+
+    <div id="plotContainer"></div>
+</body>
+</html>
